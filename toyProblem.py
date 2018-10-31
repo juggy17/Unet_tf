@@ -21,7 +21,7 @@ ny = 572
 # num circles per image
 numCircles = 10
 # total number of training images
-numImages = 1
+numImages = 100
 
 # create the dataset
 imageDS = CreateImageDataset(nx, ny, numCirlces=numCircles, numImages=numImages)
