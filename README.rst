@@ -8,6 +8,10 @@ Tensorflow Unet
 	
 .. image:: http://img.shields.io/badge/arXiv-1609.09077-orange.svg?style=flat
         :target: http://arxiv.org/abs/1609.09077
+
+.. image:: https://raw.githubusercontent.com/jakeret/tf_unet/master/docs/toy_problem.png
+   :alt: Segmentation of a toy problem.
+   :align: center
 		
 
 This is a generic **U-Net** implementation as proposed by `Ronneberger et al. <https://arxiv.org/pdf/1505.04597.pdf>`_ developed with **Tensorflow**. 
