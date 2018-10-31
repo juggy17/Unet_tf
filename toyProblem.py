@@ -38,7 +38,8 @@ ds = DataLoader(imageDS.filenames, params)
 net = unet.Unet(channels=imageDS.channels, n_class=imageDS.n_class, layers=3, features_root=16)
 # define the trainer
 trainer = unet.Trainer(net, optimizer="momentum", opt_kwargs=dict(momentum=0.2))
-# path = trainer.train(ds.dataset, "./unet_trained", training_iters=numImages//params['batch_size'], epochs=params['epochs'], display_step=2)
+# train
+path = trainer.train(ds.dataset, "./unet_trained", training_iters=numImages//params['batch_size'], epochs=params['epochs'], display_step=2)
 
 # sample prediction
 iterator = ds.dataset.make_one_shot_iterator()
