@@ -16,6 +16,19 @@ Tensorflow Unet
 
 This is a generic **U-Net** implementation as proposed by `Ronneberger et al. <https://arxiv.org/pdf/1505.04597.pdf>`_ developed with **Tensorflow**. 
 
+The goal of this repository is to act as a template to be able to do the following - 
+
+1. Generate a sample dataset consisting of circular and rectangular regions in an image that need to be segmented out.
+2. Save the sample dataset in the form of layered TIF files.
+3. Convert the TIF files into TFRecords
+4. Use the TensorFlow Dataset API to create a dataloader based on the TFRecords and train the U-net to segment out the desired regions.
+
+Usage:
+
+1. Install Anaconda
+2. Create a virtual environment with Python 3.6 and install all packages in the "Requirements" document. (Anaconda cheat sheet: https://conda.io/docs/_downloads/conda-cheatsheet.pdf)
+3. Run: python toyProblem.py
+4. Parameters like image size, number of images, number of epochs etc. are all set in toyProblem.py
 
 
 As you use **tf_unet** for your exciting discoveries, please cite the paper that describes the package::
